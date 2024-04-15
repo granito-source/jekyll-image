@@ -1,2 +1,3 @@
-# jekyll-image
-Docker image for Jekyll
+# Container Image for Jekyll
+
+Container image for Jekyll.
