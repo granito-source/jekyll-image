@@ -8,7 +8,8 @@ RUN apk add --no-cache build-base zlib-dev && \
     cd / && \
     rm -rf /tmp/setup /usr/gem/cache /root/.bundle && \
     addgroup -g 1000 jekyll && \
-    adduser -u 1000 -G jekyll -g Jekyll -D jekyll
+    adduser -u 1000 -G jekyll -g Jekyll -D jekyll && \
+    chown -R jekyll:jekyll /usr/local/bundle
 
 USER 1000
 WORKDIR /srv/jekyll
