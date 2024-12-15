@@ -1,4 +1,4 @@
-FROM ruby:3.3.0-alpine3.19
+FROM ruby:3.3.6-alpine3.20
 
 WORKDIR /tmp/setup
 COPY Gemfile Gemfile

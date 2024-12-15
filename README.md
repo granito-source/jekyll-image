@@ -8,7 +8,7 @@ Create new `site` in the current directory.
 
 ```shell
 docker run --rm -it -v ${PWD}:/srv/jekyll \
-    ghcr.io/granito-source/jekyll:4.3.3 \
+    ghcr.io/granito-source/jekyll:4.3.4 \
     jekyll new site
 cd site
 ```
@@ -19,7 +19,7 @@ Install required gems.
 docker run --rm -it \
     -v $PWD:/srv/jekyll \
     -v $PWD/vendor/bundle:/usr/local/bundle \
-    ghcr.io/granito-source/jekyll:4.3.3 \
+    ghcr.io/granito-source/jekyll:4.3.4 \
     bundle install
 ```
 
@@ -30,7 +30,7 @@ Periodically you can check for updated dependencies and update
 docker run --rm -it \
     -v $PWD:/srv/jekyll \
     -v $PWD/vendor/bundle:/usr/local/bundle \
-    ghcr.io/granito-source/jekyll:4.3.3 \
+    ghcr.io/granito-source/jekyll:4.3.4 \
     bundle update
 ```
 
@@ -42,7 +42,7 @@ docker run --rm -it \
     -v $PWD:/srv/jekyll \
     -v $PWD/vendor/bundle:/usr/local/bundle \
     -p 4000:4000 \
-    ghcr.io/granito-source/jekyll:4.3.3 \
+    ghcr.io/granito-source/jekyll:4.3.4 \
     jekyll serve -H 0.0.0.0
 ```
 
@@ -52,6 +52,6 @@ Build the site.
 docker run --rm -it \
     -v $PWD:/srv/jekyll \
     -v $PWD/vendor/bundle:/usr/local/bundle \
-    ghcr.io/granito-source/jekyll:4.3.3 \
+    ghcr.io/granito-source/jekyll:4.3.4 \
     jekyll build
 ```
